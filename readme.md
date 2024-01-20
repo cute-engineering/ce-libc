@@ -1,3 +1,3 @@
-# 👷 Cute Engineering Dummy Library
+# 👷 Cute Engineering Libc
 
-A library to be used as a template for new libraries.
+The ISO C standard library, ISO/IEC 9899
