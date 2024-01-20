@@ -9,6 +9,6 @@
         ]
     },
     "provides": [
-        "stdc"
+        "stdc-ansi"
     ]
 }
