@@ -1,14 +1,17 @@
 #pragma once
 
 #include "_prelude.h"
+
 #include <stddef.h>
+
+#include "bits/wchar_t.h"
 
 STDC_BEGIN_HEADER
 
 /* --- 7.22 - General utilities --------------------------------------------- */
 
 #ifndef NULL
-#define NULL ((void *)0)
+#    define NULL ((void *)0)
 #endif
 
 #define EXIT_FAILURE (-1)
@@ -18,19 +21,22 @@ STDC_BEGIN_HEADER
 #define RAND_MAX (32767)
 
 #define MB_CUR_MA (0) // undefined for the moment
-typedef struct {
-  int quot;
-  int rem;
+typedef struct
+{
+    int quot;
+    int rem;
 } div_t;
 
-typedef struct {
-  long quot;
-  long rem;
+typedef struct
+{
+    long quot;
+    long rem;
 } ldiv_t;
 
-typedef struct {
-  long long quot;
-  long long rem;
+typedef struct
+{
+    long long quot;
+    long long rem;
 } lldiv_t;
 
 /* --- 7.22.1 - Numeric conversion functions -------------------------------- */
