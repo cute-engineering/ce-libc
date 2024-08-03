@@ -175,7 +175,7 @@ void *memset(void *s, int c, size_t n) {
 size_t strlen(char const *s) {
   size_t i = 0;
 
-  while (s[i++] != '\0')
+  for (; s[i] != '\0'; i++)
     ;
 
   return i;
